@@ -1,0 +1,9 @@
+﻿.refprogress-control-hidden {
+    display: none;
+}
+
+.refprogress-control {
+    position: absolute;
+    top: 20px;
+    left: 120px;
+}
