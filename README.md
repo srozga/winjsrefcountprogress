@@ -33,3 +33,4 @@ You are also able to use the RefProgressControl.wrap() method to simplify the sy
 			// handler error
 		});
 
+http://szymonrozga.net/blog/2013/02/a-ref-counted-progress-control-for-winjs/
