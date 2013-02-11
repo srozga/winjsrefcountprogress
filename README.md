@@ -5,7 +5,7 @@ This project includes the `RefProgressControl` control which provides an easy in
 
 ## Usage:
 
-`<progress id='p' data-win-control='Rozga.WinJS.RefProgressControl' />`
+`<progress id='p' data-win-control='Rozga.RefProgressControl' />`
 
 	// some helpers
 	var u = function() { document.getElementById('p').winControl.use(); };
@@ -22,3 +22,14 @@ This project includes the `RefProgressControl` control which provides an easy in
 		// handle the promise
 		r(); // release one use, if zero uses, hides progress control
 	});
+
+You are also able to use the RefProgressControl.wrap() method to simplify the syntax.
+
+	var p = document.getElementById('p').winControl;
+
+	p.wrap(getPromise1, function() { 
+			// handle promise
+		}, function(error) {
+			// handler error
+		});
+
